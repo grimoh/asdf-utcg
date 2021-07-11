@@ -7,10 +7,10 @@ set -e
 
 case "$(uname -s)" in
 	"Darwin")
-		DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-v${ASDF_INSTALL_VERSION}-darwin-arm64.tar.gz"
+		DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-darwin-arm64.tar.gz"
 		;;
 	"Linux")
-		DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-v${ASDF_INSTALL_VERSION}-linux-arm64.tar.gz"
+		DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-linux-arm64.tar.gz"
 		;;
 esac
 
