@@ -6,12 +6,12 @@ set -e
 [ -n "$ASDF_DOWNLOAD_PATH" ] || (echo 'Missing ASDF_DOWNLOAD_PATH' >&2 && exit 1)
 
 case "$(uname -s)" in
-  "Darwin")
-    DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-${ASDF_INSTALL_VERSION}-darwin-arm64.tar.gz"
-    ;;
-  "Linux")
-    DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-${ASDF_INSTALL_VERSION}-linux-arm64.tar.gz"
-    ;;
+	"Darwin")
+		DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-v${ASDF_INSTALL_VERSION}-darwin-arm64.tar.gz"
+		;;
+	"Linux")
+		DOWNLOAD_URL="https://github.com/grimoh/utcg/releases/download/v${ASDF_INSTALL_VERSION}/utcg-v${ASDF_INSTALL_VERSION}-linux-arm64.tar.gz"
+		;;
 esac
 
 curl -fL -o "${ASDF_DOWNLOAD_PATH}/utcg.tar.gz" "${DOWNLOAD_URL}"
